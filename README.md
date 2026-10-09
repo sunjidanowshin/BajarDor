@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 বাজার দর / BazarDor
 
-## Getting Started
+## 📖 সংক্ষিপ্ত বর্ণনা
 
-First, run the development server:
+বাজার দর একটি ওয়েব অ্যাপ্লিকেশন, যেখানে নিত্যপ্রয়োজনীয় পণ্যের (চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলা) আজকের বাজারদর এক নজরে দেখা যায়। দামের ওঠানামা এবং বিভিন্ন বাজারের সর্বনিম্ন ও সর্বোচ্চ দামও এখানে পাওয়া যায়।
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ ব্যবহৃত প্রযুক্তি
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- DaisyUI
+- Better Auth
+- MongoDB
+- react-hot-toast
+- Vercel (ডিপ্লয়মেন্ট)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ ৫টি মূল ফিচার
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **📈 দামের ওঠানামা:** আজ যেসব পণ্যের দাম সবচেয়ে বেশি বেড়েছে ও কমেছে তার আলাদা তালিকা, সাথে চলমান প্রাইস টিকার।
+2. **🗂️ ক্যাটাগরি ও সর্ট:** ক্যাটাগরি অনুযায়ী পণ্য দেখা এবং দাম অনুযায়ী সাজানো।
+3. **🏪 বাজারভিত্তিক দাম:** পণ্যের বিস্তারিত পেজে বিভিন্ন বাজারের সর্বনিম্ন, সর্বোচ্চ ও গড় দাম।
+4. **🔐 অথেনটিকেশন:** ইমেইল/পাসওয়ার্ড, Google ও GitHub দিয়ে সাইন ইন ও সাইন আপ, সাথে সুরক্ষিত রুট।
+5. **📱 সম্পূর্ণ রেসপনসিভ ডিজাইন:** মোবাইল, ট্যাবলেট ও ডেস্কটপে সমানভাবে কাজ করে।# 🛒 বাজার দর / BazarDor
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
