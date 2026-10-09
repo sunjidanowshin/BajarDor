@@ -28,7 +28,7 @@ export default function UpdateNameForm({ currentName }: { currentName: string })
     }
     setError(undefined);
     setLoading(true);
-    // BetterAuth: https://better-auth.com/docs/concepts/users-accounts#update-user
+  
     const { error } = await updateUser({ name: trimmed });
     setLoading(false);
 
