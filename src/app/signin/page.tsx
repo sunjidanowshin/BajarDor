@@ -22,7 +22,7 @@ function FormSkeleton() {
 export default function SignInPage() {
   return (
     <AuthShell title="সাইন ইন" subtitle="বিস্তারিত দাম, বাজার তুলনা ও প্রোফাইল দেখতে অ্যাকাউন্টে ঢুকুন।">
-      {/* useSearchParams (for ?redirect=) needs a Suspense boundary */}
+    
       <Suspense fallback={<FormSkeleton />}>
         <SignInForm />
       </Suspense>

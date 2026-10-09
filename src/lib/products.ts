@@ -1,6 +1,6 @@
 import type { Product } from "./types";
 
-/** Top N products whose price went up today, biggest rise first. */
+
 export function topRisers(products: Product[], n = 6): Product[] {
   return products
     .filter((p) => p.change.dir === "up")
@@ -8,7 +8,7 @@ export function topRisers(products: Product[], n = 6): Product[] {
     .slice(0, n);
 }
 
-/** Top N products whose price went down today, biggest fall first. */
+
 export function topFallers(products: Product[], n = 6): Product[] {
   return products
     .filter((p) => p.change.dir === "down")
@@ -25,12 +25,12 @@ export interface PriceSummary {
   marketCount: number;
 }
 
-/** Average of a market's min and max price, rounded to whole taka. */
+
 export function marketAvg(m: { min: number; max: number }): number {
   return Math.round((m.min + m.max) / 2);
 }
 
-/** Lowest / highest / average price across all markets. */
+
 export function priceSummary(product: Product): PriceSummary {
   const markets = product.markets ?? [];
   if (markets.length === 0) {

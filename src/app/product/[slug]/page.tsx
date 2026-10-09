@@ -34,7 +34,7 @@ function SummaryStat({ label, value, note, tone }: { label: string; value: numbe
 async function ProductContent({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const path = `/product/${slug}`;
-  await requireSession(path); // protected route
+  await requireSession(path); 
 
   const product = await getProductBySlug(decodeURIComponent(slug));
   if (!product) notFound();
@@ -44,7 +44,7 @@ async function ProductContent({ params }: { params: Promise<{ slug: string }> })
 
   return (
     <>
-      {/* Breadcrumbs */}
+  
       <div className="breadcrumbs py-1 text-sm">
         <ul>
           <li><Link href="/">হোম</Link></li>
@@ -53,7 +53,7 @@ async function ProductContent({ params }: { params: Promise<{ slug: string }> })
         </ul>
       </div>
 
-      {/* Summary header */}
+      
       <section className="flex flex-col gap-4 rounded-2xl border border-base-300 bg-base-100 p-5 sm:flex-row sm:items-center">
         <div className="flex flex-1 items-center gap-4">
           <span className="flex size-16 shrink-0 items-center justify-center rounded-2xl bg-base-200 text-4xl sm:size-20">

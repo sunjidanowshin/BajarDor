@@ -13,7 +13,7 @@ export function authErrorMessage(error: { code?: string; message?: string } | nu
   return (error.code && MESSAGES[error.code]) || error.message || "কিছু একটা সমস্যা হয়েছে। আবার চেষ্টা করুন।";
 }
 
-/** Only allow redirects to paths on this site (prevents open-redirects via ?redirect=). */
+
 export function safeRedirect(path: string | null | undefined, fallback = "/"): string {
   if (!path || !path.startsWith("/") || path.startsWith("//")) return fallback;
   return path;

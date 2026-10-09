@@ -14,8 +14,8 @@ export interface Product {
   category: string;
   categoryNameBn: string;
   categoryIcon: string;
-  unit: string; // "kg" | "litre" | "dozen" | "piece"
-  image: string; // emoji
+  unit: string; 
+  image: string;
   today: number;
   yesterday: number;
   lastWeek: number;

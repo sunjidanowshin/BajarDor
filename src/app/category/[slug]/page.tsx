@@ -7,7 +7,7 @@ import { ProductGridSkeleton } from "@/components/product/ProductCardSkeleton";
 import { getCategories, getCategory, getProductsByCategory } from "@/lib/api";
 import { toBn } from "@/lib/format";
 
-/** Pre-build the 8 known categories; reloading /category/chal on Vercel works without a 404. */
+
 export async function generateStaticParams() {
   try {
     const categories = await getCategories();
@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 async function CategoryContent({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const category = await getCategory(decodeURIComponent(slug));
-  if (!category) notFound(); // invalid slug → 404 page with "হোম পেজে ফিরে যান"
+  if (!category) notFound(); 
 
   const products = await getProductsByCategory(category.slug);
 
